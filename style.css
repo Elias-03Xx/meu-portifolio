@@ -1,0 +1,456 @@
+
+/* ========================================
+   CONFIGURAÇÕES GERAIS
+======================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #0a0a0f;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+/* ========================================
+   CABEÇALHO
+======================================== */
+
+header {
+    width: 100%;
+    padding: 25px 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #22222e;
+}
+
+header h1 {
+    font-size: 24px;
+    color: #4f8cff;
+}
+
+/* ========================================
+   MENU
+======================================== */
+
+nav {
+    display: flex;
+    gap: 25px;
+}
+
+nav a {
+    color: #b8b8ca;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #4f8cff;
+}
+
+/* ========================================
+   SEÇÃO INÍCIO
+======================================== */
+
+.hero {
+    min-height: 85vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 80px 10%;
+}
+
+.hero h2 {
+    font-size: 56px;
+    line-height: 1.2;
+    max-width: 750px;
+    margin-bottom: 20px;
+}
+
+.hero h2 span {
+    color: #4f8cff;
+}
+
+.hero p {
+    font-size: 18px;
+    color: #a1a1b5;
+    max-width: 600px;
+    margin-bottom: 30px;
+}
+
+/* ========================================
+   BOTÕES
+======================================== */
+
+.botao {
+    display: inline-block;
+    width: fit-content;
+    padding: 12px 28px;
+    background-color: #4f8cff;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.botao:hover {
+    background-color: #2865d8;
+    transform: translateY(-3px);
+}
+
+/* ========================================
+   SEÇÃO PROJETOS
+======================================== */
+
+.projetos {
+    padding: 80px 10%;
+    background-color: #0e0e16;
+}
+
+.projetos h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.descricao-projetos {
+    color: #a1a1b5;
+    margin-bottom: 35px;
+}
+
+.container-projetos {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 25px;
+}
+
+.card-projeto {
+    background-color: #161622;
+    border: 1px solid #29293a;
+    border-radius: 12px;
+    padding: 25px;
+    transition: 0.3s;
+}
+
+.card-projeto:hover {
+    transform: translateY(-5px);
+    border-color: #4f8cff;
+}
+
+.card-projeto h3 {
+    font-size: 21px;
+    margin-bottom: 15px;
+}
+
+.card-projeto p {
+    color: #a1a1b5;
+    margin-bottom: 20px;
+}
+
+.card-projeto span {
+    display: inline-block;
+    background-color: #222b40;
+    color: #7eacff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 13px;
+    margin-right: 10px;
+    margin-top: 8px;
+}
+
+/* ========================================
+   SEÇÃO SOBRE
+======================================== */
+
+.sobre {
+    padding: 80px 10%;
+    background-color: #0a0a0f;
+}
+
+.sobre h2 {
+    font-size: 36px;
+    margin-bottom: 25px;
+}
+
+.sobre p {
+    color: #a1a1b5;
+    font-size: 17px;
+    line-height: 1.8;
+    max-width: 800px;
+}
+
+/* ========================================
+   SEÇÃO TECNOLOGIAS
+======================================== */
+
+.tecnologias {
+    padding: 80px 40px;
+    background-color: #050d1d;
+    color: #f1f5f9;
+}
+
+/* Cabeçalho das tecnologias */
+
+.tecnologias-header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.subtitulo {
+    color: #38bdf8;
+    letter-spacing: 4px;
+    font-size: 14px;
+}
+
+.tecnologias-header h2 {
+    font-size: 42px;
+    margin: 15px 0;
+}
+
+.tecnologias-header h2 span {
+    color: #2563eb;
+}
+
+.tecnologias-header p {
+    color: #94a3b8;
+    font-size: 18px;
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+/* Três categorias lado a lado */
+
+.tecnologias-container {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    align-items: start;
+}
+
+/* Cartões das categorias */
+
+.categoria {
+    border: 1px solid #1e40af;
+    border-radius: 12px;
+    padding: 20px;
+    background-color: #081327;
+    min-width: 0;
+}
+
+.categoria h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.categoria > p {
+    color: #94a3b8;
+    font-size: 14px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+/* Grade interna das tecnologias */
+
+.tecnologias-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px;
+}
+
+/* Cartões individuais */
+
+.tecnologia-card {
+    border: 1px solid #1e3a8a;
+    border-radius: 10px;
+    padding: 15px 10px;
+    text-align: center;
+    background-color: #0b1930;
+    transition: 0.3s;
+    min-width: 0;
+}
+
+/* Logos das tecnologias */
+
+.tecnologia-logo {
+    width: 45px;
+    height: 45px;
+    object-fit: contain;
+    margin-bottom: 10px;
+    transition: 0.3s;
+}
+
+/* Títulos dos cartões */
+
+.tecnologia-card h4 {
+    font-size: 15px;
+    margin-bottom: 8px;
+}
+
+/* Descrições */
+
+.tecnologia-card p {
+    font-size: 12px;
+    color: #94a3b8;
+    line-height: 1.5;
+}
+
+/* Efeito ao passar o mouse */
+
+.tecnologia-card:hover {
+    transform: translateY(-4px);
+    border-color: #3b82f6;
+    box-shadow: 0 0 15px rgba(37, 99, 235, 0.2);
+}
+
+.tecnologia-card:hover .tecnologia-logo {
+    transform: scale(1.08);
+}
+
+/* ========================================
+   SEÇÃO CONTATO
+======================================== */
+
+.contato {
+    padding: 80px 10%;
+    background-color: #0e0e16;
+    text-align: center;
+}
+
+.contato h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.contato p {
+    color: #a1a1b5;
+    margin-bottom: 30px;
+}
+
+/* Links de contato */
+
+.links-contato {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+/* ========================================
+   RESPONSIVIDADE
+======================================== */
+
+/* AJUSTE DA APRESENTAÇÃO E FOTO */
+
+.hero {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 280px;
+    align-items: center;
+    gap: 40px;
+}
+
+.hero-conteudo {
+    min-width: 0;
+}
+
+.hero-foto {
+    width: 280px;
+    height: 280px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 3px solid #3b82f6;
+    box-shadow: 0 0 25px rgba(59, 130, 246, 0.25);
+}
+
+.hero-foto img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+}
+
+/* TABLETS */
+
+@media (max-width: 900px) {
+
+    .container-projetos {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .tecnologias-container {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .hero {
+        grid-template-columns: minmax(0, 1fr) 220px;
+        gap: 25px;
+    }
+
+    .hero-foto {
+        width: 220px;
+        height: 220px;
+    }
+}
+
+/* CELULARES */
+
+@media (max-width: 600px) {
+
+    header {
+        padding: 20px 6%;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav {
+        gap: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .hero {
+        grid-template-columns: 1fr;
+        text-align: center;
+        justify-items: center;
+        padding: 60px 6%;
+    }
+
+    .hero h2 {
+        font-size: 38px;
+    }
+
+    .hero-foto {
+        width: 200px;
+        height: 200px;
+    }
+
+    .projetos,
+    .sobre,
+    .contato {
+        padding: 60px 6%;
+    }
+
+    .container-projetos {
+        grid-template-columns: 1fr;
+    }
+
+    .tecnologias {
+        padding: 60px 20px;
+    }
+
+    .tecnologias-header h2 {
+        font-size: 30px;
+    }
+
+    .tecnologias-container {
+        grid-template-columns: 1fr;
+    }
+}
